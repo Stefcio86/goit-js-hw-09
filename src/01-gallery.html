@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/01-gallery.css" />
-    <title>Image Gallery</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./node_modules/simplelightbox/dist/simple-lightbox.min.css">
+    <title>Gallery</title>
 </head>
 
 <body>
-    <ul class="gallery"></ul>
-
-    <!-- CDN for SimpleLightbox -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
-
-    <script src="./01-gallery.js"></script>
+    <ul class="gallery">
+    </ul>
+    <script type="module" src="./gallery.js"></script>
 </body>
 
 </html>
