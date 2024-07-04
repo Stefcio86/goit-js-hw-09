@@ -1,56 +1,10 @@
+import './css/02-form.css';
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.feedback-form');
   const emailInput = form.elements['email'];
   const messageTextarea = form.elements['message'];
   const STORAGE_KEY = 'feedback-form-state';
-
-  const formStyle = `
-    .feedback-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        padding: 0;
-        margin: 0px 200px;
-    }
-
-    .form-label {
-        font-weight: bold;
-        margin-bottom: 4px;
-    }
-
-    #email, #message {
-        width: 360px;
-        height: 40px;
-        padding: 8px;
-        font-size: 14px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    #message {
-        height: 80px;
-        resize: none;
-    }
-
-    #submit {
-        width: 95px;
-        height: 40px;
-        border-radius: 8px;
-        padding: 8px 16px; 
-        background-color: #4E75FF;
-        color: #FFFFFF;
-        align-self: start; 
-        cursor: pointer; 
-        border: none;
-        font-size: 14px;
-    }
-`;
-
-  const styleElement = document.createElement('style');
-  styleElement.textContent = formStyle;
-  document.head.appendChild(styleElement);
 
   const saveToLocalStorage = () => {
     const formData = {
