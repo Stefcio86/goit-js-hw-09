@@ -3,25 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="./css/02-form.css">
 </head>
 
 <body>
   <form class="feedback-form" autocomplete="off">
     <label>
       Email
-      <input type="email" name="email" id="email" autofocus />
+      <input type="email" name="email" autofocus>
     </label>
-    <br>
     <label>
       Message
-      <textarea name="message" id="message" rows="8"></textarea>
+      <textarea name="message" rows="8"></textarea>
     </label>
-    <br>
-    <button type="submit" id="submitBtn">Submit</button>
+    <button type="submit">Submit</button>
   </form>
-
-  <script src="02-form.js" type="module"></script>
+  <script type="module" src="/src/02-form.js"></script>
 </body>
 
 </html>
