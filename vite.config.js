@@ -12,7 +12,6 @@ export default defineConfig(({ command }) => {
     base: '/goit-js-hw-09/',
     build: {
       sourcemap: true,
-
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -23,6 +22,7 @@ export default defineConfig(({ command }) => {
           },
           entryFileNames: 'commonHelpers.js',
         },
+        external: ['simplelightbox'],
       },
       outDir: '../dist',
     },
