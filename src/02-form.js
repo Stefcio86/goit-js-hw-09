@@ -1,5 +1,3 @@
-import './css/02-form.css';
-
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.feedback-form');
   const emailInput = form.elements['email'];
@@ -32,11 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', event => {
     event.preventDefault();
 
-    if (emailInput.value.trim() && messageTextarea.value.trim()) {
-      const formData = {
-        email: emailInput.value.trim(),
-        message: messageTextarea.value.trim(),
-      };
+    const formData = {
+      email: emailInput.value.trim(),
+      message: messageTextarea.value.trim(),
+    };
+
+    if (formData.email && formData.message) {
       console.log('Submitted:', formData);
 
       form.reset();
