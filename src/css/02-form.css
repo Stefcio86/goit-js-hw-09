@@ -12,8 +12,8 @@
     margin-bottom: 4px;
 }
 
-#email,
-#message {
+.email,
+.message {
     width: 360px;
     height: 40px;
     padding: 8px;
@@ -23,12 +23,12 @@
     box-sizing: border-box;
 }
 
-#message {
+.message {
     height: 80px;
     resize: none;
 }
 
-#submitBtn {
+.submit {
     width: 95px;
     height: 40px;
     border-radius: 8px;
